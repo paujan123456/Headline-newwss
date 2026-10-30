@@ -1,0 +1,168 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.7;
+    padding: 15px;
+}
+
+/* JUDUL UTAMA */
+.headline {
+    background-color: #000000;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.headline h1 {
+    color: #00ffff;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* PARAGRAF PEMBUKA */
+.intro {
+    font-size: 17px;
+    margin-bottom: 25px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* JUDUL SETIAP BAGIAN */
+.section-title {
+    background-color: #000000;
+    color: #00ffff;
+    font-family: Georgia, serif;
+    font-size: 27px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Halaman Pertama */
+.main-news {
+    margin-bottom: 35px;
+}
+
+.news-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.news-content img {
+    width: 50%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.news-text {
+    flex: 1;
+}
+
+.news-text h3,
+.card-text h3 {
+    color: #000000;
+    font-size: 23px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.news-text p,
+.card-text p {
+    color: #333333;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* LINK BERITA */
+.read-more {
+    display: inline-block;
+    margin-top: 12px;
+    color: #004cff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+/* BERITA TERBARU */
+.latest-news {
+    margin-bottom: 35px;
+}
+
+.news-card {
+    display: flex;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.news-card img {
+    width: 280px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-text {
+    flex: 1;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000000;
+    color: #00ffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* UKURAN LAYAR HP */
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    .headline h1 {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .news-content {
+        flex-direction: column;
+    }
+
+    .news-content img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .news-card {
+        flex-direction: column;
+    }
+
+    .news-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .news-text h3,
+    .card-text h3 {
+        font-size: 20px;
+    }
+}
